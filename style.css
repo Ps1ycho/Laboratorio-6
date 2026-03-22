@@ -43,3 +43,17 @@ body{
     display: inline-block;
     padding: 0 20px;
 }
+
+.header .navegacion li:hover{
+    transform: scale(1.1);
+}
+
+.header .navegacion a{
+    font-size: 700;
+    color: yellow;
+    text-decoration: none;
+}
+
+.header .navegacion li a:hover{
+    color: black;
+}
