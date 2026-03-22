@@ -39,12 +39,12 @@ body{
     list-style: none;
 }
 
-.header .navegacion li{
+.header .navegacion ul{
     display: inline-block;
     padding: 0 20px;
 }
 
-.header .navegacion li:hover{
+.header .navegacion ul:hover{
     transform: scale(1.1);
 }
 
@@ -54,6 +54,6 @@ body{
     text-decoration: none;
 }
 
-.header .navegacion li a:hover{
+.header .navegacion ul a:hover{
     color: black;
 }
