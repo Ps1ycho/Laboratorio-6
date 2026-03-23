@@ -57,3 +57,10 @@ body{
 .header .navegacion ul a:hover{
     color: black;
 }
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
