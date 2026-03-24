@@ -71,8 +71,7 @@
           title="01 Title Theme"
           target="_blank"
           style="color: #cccccc; text-decoration: none"
-          ></a
-        >
+        ></a>
       </div>
       <p>
         Hace 7 años una guerra estallo en la ciudadela de hyrule llamada la
@@ -221,26 +220,8 @@
         Link para que pueda vivir su infancia.
       </p>
     </article>
-    <script>
-      const audio = document.getElementById("pageAudio");
-      const article = document.querySelector("article");
-
-      function checkArticleEnd() {
-        const rect = article.getBoundingClientRect();
-        if (rect.bottom <= window.innerHeight) {
-          audio.pause();
-        }
-      }
-
-      window.addEventListener("scroll", checkArticleEnd);
-      window.addEventListener("resize", checkArticleEnd);
-
-      audio.addEventListener("ended", () => {
-        audio.pause();
-      });
-
-      // Para casos donde la página se carga ya al final del artículo
-      window.addEventListener("load", checkArticleEnd);
-    </script>
+    <article class="Purgatorio">
+      <h1 class="Titulo1">Un Heroe Abandonado</h1>
+    </article>
   </body>
 </html>
