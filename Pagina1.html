@@ -29,6 +29,51 @@
     </header>
     <article class="Infancia_perdida">
       <h1 class="titulo">El inicio de un heroe</h1>
+      <iframe
+        width="100%"
+        height="300"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A95906218&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+      ></iframe>
+      <div
+        style="
+          font-size: 10px;
+          color: #cccccc;
+          line-break: anywhere;
+          word-break: normal;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-family:
+            Interstate,
+            Lucida Grande,
+            Lucida Sans Unicode,
+            Lucida Sans,
+            Garuda,
+            Verdana,
+            Tahoma,
+            sans-serif;
+          font-weight: 100;
+        "
+      >
+        <a
+          href="https://soundcloud.com/ocarina-of-time-ost"
+          title="ocarina of time ost"
+          target="_blank"
+          style="color: #084528; text-decoration: none"
+          >Title Theme</a
+        >
+        ·
+        <a
+          href="https://soundcloud.com/ocarina-of-time-ost/01-title-theme"
+          title="01 Title Theme"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          ></a
+        >
+      </div>
       <p>
         Hace 7 años una guerra estallo en la ciudadela de hyrule llamada la
         guerra civil, todas las razas luchaban por tener el poder, todos los
@@ -176,5 +221,26 @@
         Link para que pueda vivir su infancia.
       </p>
     </article>
+    <script>
+      const audio = document.getElementById("pageAudio");
+      const article = document.querySelector("article");
+
+      function checkArticleEnd() {
+        const rect = article.getBoundingClientRect();
+        if (rect.bottom <= window.innerHeight) {
+          audio.pause();
+        }
+      }
+
+      window.addEventListener("scroll", checkArticleEnd);
+      window.addEventListener("resize", checkArticleEnd);
+
+      audio.addEventListener("ended", () => {
+        audio.pause();
+      });
+
+      // Para casos donde la página se carga ya al final del artículo
+      window.addEventListener("load", checkArticleEnd);
+    </script>
   </body>
 </html>
