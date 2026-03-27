@@ -5,15 +5,15 @@
     margin: 0;
     padding: 0;
     font-family: "Dancing Script", cursive;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 body{
-    background-color: lightseagreen;
+    background-color: #f4f1ea;
 }
 
 .header{
-    background-color: rgb(35, 183, 35);
+    background-color: #1a3c34;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,13 +49,13 @@ body{
 }
 
 .header .navegacion a{
-    font-size: 700;
-    color: yellow;
+    font-weight: 700;
+    color: #d4af37;
     text-decoration: none;
 }
 
 .header .navegacion ul a:hover{
-    color: black;
+    color: #ffffff;
 }
 
 .imagen{
@@ -63,7 +63,7 @@ body{
     width: 220px;
     height: auto;
     margin: 12px;
-    border: 3px solid yellow;
+    border: 3px solid #d4af37;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
@@ -76,6 +76,7 @@ body{
 
 article {
     text-align: center;
+    padding: 40px 10%;
 }
 
 .galeria {
@@ -99,22 +100,30 @@ article {
 }
 
 .Infancia_perdida{
-    color: rgb(10, 88, 19);
+    color: #333333;
 }
 
 .titulo{
-    color: darkblue;
+    color: #1a3c34;
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 .Purgatorio{
-    background-color: black;
-    color: white;
+    background-color: #2a1b38;
+    color: #e0d8e6;
+}
+
+.Purgatorio .titulo{
+    color: #bfa9cc;
 }
 
 .Heroe_olvidado{
-    background-color: darkolivegreen;
-    color: darkred;
+    background-color: #3b444b;
+    color: #d3d3d3;
+}
+
+.Heroe_olvidado .titulo{
+    color: #c0a080;
 }
