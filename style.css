@@ -100,7 +100,6 @@ article {
 
 .Infancia_perdida{
     color: rgb(10, 88, 19);
-    background-color: lightseagreen;
 }
 
 .titulo{
@@ -113,4 +112,9 @@ article {
 .Purgatorio{
     background-color: black;
     color: white;
+}
+
+.Heroe_olvidado{
+    background-color: darkolivegreen;
+    color: darkred;
 }
